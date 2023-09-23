@@ -1,9 +1,11 @@
 export default function TesteMonial() {
   return (
     <div
-      className="flex items-center justify-center flex-col gap-7 py-5 text-white"
+      className="flex items-center justify-center flex-col gap-7 py-5 text-white relative"
       id="about"
     >
+      <div className="rounded-full absolute top-20 -left-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
+      <div className="rounded-full absolute bottom-20 -right-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
       <h1 className="font-bold text-[41px] capitalize">Testemonials</h1>
       <div className="flex items-center justify-center h-[80vh] relative">
         <div className="border  slider-background border-solid border-white rounded-[24px] flex flex-col gap-2 py-5 px-5 unique-Link text-xl font-normal max-w-[900px]">

@@ -8,7 +8,7 @@ import Work from "@/components/Work";
 
 export default function Home() {
   return (
-    <main className=" h-screen  p-6">
+    <main className=" h-screen overflow-x-hidden p-6">
       <Navbar />
       <Hero />
       <About />

@@ -7,7 +7,9 @@ import {
 
 export default function Faq() {
   return (
-    <div className="w-full flex items-center justify-center flex-col lg:py-20 ">
+    <div className="w-full flex items-center justify-center flex-col lg:py-20 relative">
+      <div className="rounded-full absolute top-20 -left-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
+      <div className="rounded-full absolute bottom-20 -right-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
       <h1 className="text-secondary italic lg:text-4xl font-bold py-10 mb-4 text-2xl">
         FAQs
       </h1>

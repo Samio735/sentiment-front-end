@@ -5,7 +5,9 @@ interface INavbarProps {}
 
 const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
   return (
-    <nav className="flex items-center justify-between px-4 list-none text-lg font-medium ">
+    <nav className="flex items-center justify-between px-4 list-none text-lg font-medium relative">
+      <div className="rounded-full absolute top-20 -left-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
+      <div className="rounded-full absolute bottom-20 -right-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
       <li>
         <Link href={"/"}>How it works</Link>
       </li>

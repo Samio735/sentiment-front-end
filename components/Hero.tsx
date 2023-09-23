@@ -3,9 +3,11 @@ import { AiOutlineGithub } from "react-icons/ai";
 export default function Hero() {
   return (
     <div
-      className="flex items-center justify-center py-6 h-[90vh] gap-0 flex-col text-white"
+      className="flex items-center justify-center py-6 h-[90vh] gap-0 flex-col text-white relative"
       id="hero"
     >
+      <div className="rounded-full absolute top-20 -left-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
+      <div className="rounded-full absolute bottom-20 -right-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
       <div className="flex flex-col gap-3">
         <h1 className="flex flex-col text-[53px] font-semibold">
           Welcome to

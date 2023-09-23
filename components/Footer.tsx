@@ -6,7 +6,12 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <div className="flex items-center justify-center pb-10" id="footer">
+    <div
+      className="flex items-center justify-center pb-10 relative overflow-hidden rounded-sm"
+      id="footer"
+    >
+      <div className="rounded-full absolute top-20 -left-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
+      <div className="rounded-full absolute bottom-20 -right-40 w-80 h-80 bg-[#42057F] blur-3xl -z-10"></div>
       <div className="flex items-center w-1/2 px-5">
         <div className="w-[80%] flex flex-col gap-4">
           <span className="contact">contact us</span>
@@ -26,7 +31,7 @@ export default function Footer() {
                 s_zegtouf@estin.dz
               </span>
               <span className="li-footer flex items-center">
-                <MdOutlineLocationOn /> amizour, bejaiafd{" "}
+                <MdOutlineLocationOn /> amizour, bejaiafd
               </span>
             </div>
           </div>
