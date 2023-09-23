@@ -2,7 +2,7 @@
 
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react";
-import { Button } from "./Button";
+import { buttonVariants } from "./Button";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 
@@ -29,15 +29,18 @@ export const AccordionTrigger = forwardRef<
       {...props}
     >
       {children}
-      {/* <Button
-        size={"sm"}
-        // aria-label="open response to question"
-        value={props.value}
-        className="lg:px-5 lg:h-8 h-6 py-0.5 ml-1"
+      <div
+        aria-label="open response to question"
+        className={cn(
+          buttonVariants({
+            size: "icon",
+          }),
+          "min-w-[3rem] h-8 md:w-14 flex items-center justify-center bg-primary"
+        )}
       >
         <ChevronDownIcon className="lg:h-7 lg:w-7 font-semibold " />
-        {/* <span className="sr-only">open response to question</span> */}
-      {/* </Button>  */}
+        <span className="sr-only">open response to question</span>
+      </div>
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
