@@ -1,3 +1,8 @@
+"use client";
+
+import { useState } from "react";
+import Predict from "./Predict";
+
 export default function page() {
-  return <div>page</div>;
+  return <Predict />;
 }
