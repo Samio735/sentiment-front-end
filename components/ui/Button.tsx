@@ -35,7 +35,7 @@ export interface ButtonProps
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button";
+    const Comp = "button";
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}

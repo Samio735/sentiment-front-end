@@ -1,9 +1,11 @@
+"use client";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/Accordion";
+import { Button } from "./ui/Button";
 
 export default function Faq() {
   return (
@@ -16,7 +18,7 @@ export default function Faq() {
       <div className="lg:w-1/2 mb-10 lg:px-0 slider-background  py-5 px-4 rounded-[26px] border border-solid border-white">
         <Accordion type="single" className="w-full space-y-6 px-7" collapsible>
           <AccordionItem value="item-1">
-            <AccordionTrigger>
+            <AccordionTrigger value={"btn-1"}>
               <div className="flex items-start gap-[0.875rem] md:gap-[1.4375rem]">
                 <span className="text-2xl italic font-semibold text-primary ">
                   Q:
@@ -63,7 +65,7 @@ export default function Faq() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger>
+            <AccordionTrigger value={"btn-2"} id="1">
               <div className="flex gap-[1.4375rem]">
                 <p className="text-2xl italic font-semibold text-primary ">
                   Q:
@@ -71,6 +73,7 @@ export default function Faq() {
                 How accurate is your sentiment analysis?
               </div>
             </AccordionTrigger>
+
             <AccordionContent>
               Absolutely! You can easily cancel your subscription anytime with
               just a few clicks. However, rest assured that our unique features

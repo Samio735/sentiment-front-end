@@ -29,14 +29,15 @@ export const AccordionTrigger = forwardRef<
       {...props}
     >
       {children}
-      <Button
+      {/* <Button
         size={"sm"}
-        aria-label="open response to question"
+        // aria-label="open response to question"
+        value={props.value}
         className="lg:px-5 lg:h-8 h-6 py-0.5 ml-1"
       >
         <ChevronDownIcon className="lg:h-7 lg:w-7 font-semibold " />
-        <span className="sr-only">open response to question</span>
-      </Button>
+        {/* <span className="sr-only">open response to question</span> */}
+      {/* </Button>  */}
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
